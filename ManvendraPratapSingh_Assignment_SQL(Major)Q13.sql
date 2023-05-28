@@ -1,0 +1,1 @@
+SELECT SUM(Order_Quantity) FROM market_fact_full;

@@ -1,0 +1,5 @@
+SELECT COUNT(Ship_Mode) AS SHIP_MODE , Ship_Mode
+FROM shipping_dimen
+WHERE DATE_FORMAT(Ship_Date,'%Y')='2011'
+GROUP BY Ship_Mode
+ORDER BY SHIP_MODE DESC LIMIT 1;
